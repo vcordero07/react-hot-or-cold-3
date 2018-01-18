@@ -12,7 +12,7 @@ export default function Feedback(props) {
 
   let guessAgain;
   if (key !== 0) {
-    guessAgain = <span className="visuallyhidden">Guess again!</span>;
+    guessAgain = <span className="visuallyhidden"> Guess again!</span>;
   }
   return (
     <h2
@@ -22,7 +22,7 @@ export default function Feedback(props) {
       aria-live="assertive"
       aria-atomic="true"
     >
-      {props.feedback} {guessAgain}
+      {props.feedback}{guessAgain}
     </h2>
   );
 }
