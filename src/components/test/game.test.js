@@ -29,10 +29,6 @@ it('Can make guesses', () => {
     correctAnswer: 100
   });
 
-  wrapper.instance().makeGuess(25);
-  expect(wrapper.state('guesses')).toEqual([25]);
-  expect(wrapper.state('feedback')).toEqual(`You're Ice Cold...`);
-
   wrapper.instance().makeGuess(60);
   expect(wrapper.state('guesses')).toEqual([25, 60]);
   expect(wrapper.state('feedback')).toEqual(`You're Cold...`);
